@@ -31,13 +31,22 @@
         <p>🧪 pH Level: 6.7</p>
         <p>🧫 Nutrients: NPK Balanced</p>
       </section> -->
-      <div class="card sensor-card">
+      <!-- <div class="card sensor-card">
         <h2>Today's Soil Data</h2>
         <p>🌱Moisture: <span id="moisture"></span></p>
         <p>🧪pH: <span id="ph"></span></p>
         <p>🧫 Nitrogen: <span id="nitrogen"></span></p>
         <p>Temperature: <span id="temperature"></span></p>
-      </div>
+      </div> -->
+
+      <section class="card">
+        <h2>🌡️ Soil Conditions</h2>
+        <p>Moisture: <span id="moisture">--</span></p>
+        <p>pH: <span id="ph">--</span></p>
+        <p>Nitrogen: <span id="nitrogen">--</span></p>
+        <p>Temperature: <span id="temperature">--</span></p>
+        <p>Last Updated: <span id="timestamp">--</span></p>
+      </section>
 
       <section class="card">
         <h2>Weather Forecast</h2>
@@ -70,7 +79,7 @@
 
       async function fetchSoilData() {
         try {
-          const res = await fetch("http://localhost:3000/api/soil-data");
+          const res = await fetch("/api/soil-data");
           const data = await res.json();
 
           document.getElementById("moisture").textContent = data.moisture + "%";
@@ -79,14 +88,17 @@
             data.nitrogen + " ppm";
           document.getElementById("temperature").textContent =
             data.temperature + "°C";
+          document.getElementById("timestamp").textContent = new Date(
+            data.timestamp
+          ).toLocaleTimeString();
         } catch (err) {
-          console.error("Failed to fetch data:", err);
+          console.error("Failed to fetch data", err);
         }
       }
 
-      // Refresh every 10 seconds
+      // Fetch data every 10 seconds
+      fetchSoilData(); // Initial load
       setInterval(fetchSoilData, 10000);
-      fetchSoilData();
     </script>
   </body>
 </html>
