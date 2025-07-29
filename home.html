@@ -1,0 +1,83 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgroMedLink - Home</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/video.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <h2 class="logo">AgroMedLink</h2>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul id="nav-menu">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="soil-test.html">Soil Test</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="health.html">Health Info</a></li>
+        <li><a href="chatbot.html">SamaBot</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero enhanced">
+      <video autoplay muted loop class="background-video">
+        <source src="Assets/farm-landscape2.mp4.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay">
+        <h1>Welcome to AgroMedLink</h1>
+        <p>
+          Empowering Somali farmers through Technology, Health, and Innovation.
+        </p>
+        <a href="dashboard.html" class="cta-button">Get Started</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature-card">
+        <h3>🌱 Smart Agriculture</h3>
+        <p>
+          Analyze your soil, monitor crops, and get AI-based suggestions to
+          increase your yield.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>🧪 Soil & Water Testing</h3>
+        <p>
+          Real-time insights about your farm’s soil health, moisture, and
+          chemical content.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>🩺 Farmer Health Support</h3>
+        <p>
+          Access medical tips and emergency help based on your farm’s
+          environmental data.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>🤖 SamaBot Assistant</h3>
+        <p>
+          Ask questions and get instant advice from your digital farming
+          assistant, SamaBot.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 AgroMedLink - Built with ❤️ for Somali farmers</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("nav-menu");
+        nav.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
