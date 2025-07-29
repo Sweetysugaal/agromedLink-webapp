@@ -1,0 +1,70 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f8f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar
+.main-nav {
+  background-color: rgba(8, 127, 91, 0.9);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.main-nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  color: #d9f99d;
+} */
+
+.soil-header {
+  background-color: #087f5b;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.soil-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.soil-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.soil-card h2 {
+  color: #087f5b;
+  margin-bottom: 1rem;
+}
+
+.soil-card p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
