@@ -1,0 +1,61 @@
+<!-- soil-test.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgroMedLink - Soil Test</title>
+    <link rel="stylesheet" href="css/soil-test.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <h2 class="logo">AgroMedLink</h2>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul id="nav-menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="health.html">Health Info</a></li>
+
+        <li><a href="chatbot.html">SamaBot</a></li>
+      </ul>
+    </nav>
+    <header class="soil-header">
+      <h1>🧪 Soil & Water Test Results</h1>
+    </header>
+    <main class="soil-container">
+      <section class="soil-card">
+        <h2>Soil Moisture</h2>
+        <p>📊 42%</p>
+      </section>
+
+      <section class="soil-card">
+        <h2>Soil pH Level</h2>
+        <p>🔬 6.7 (Slightly Acidic)</p>
+      </section>
+
+      <section class="soil-card">
+        <h2>Soil Nutrients</h2>
+        <p>🧫 NPK: N=High, P=Medium, K=Low</p>
+      </section>
+
+      <section class="soil-card">
+        <h2>Water Quality</h2>
+        <p>💧 EC: 1.2 dS/m (Normal)</p>
+        <p>💧 TDS: 600 ppm</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 AgroMedLink - Built with ❤️ for Somali farmers</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("nav-menu");
+        nav.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
