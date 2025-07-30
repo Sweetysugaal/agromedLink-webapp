@@ -15,16 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Soil & Farming
       soil: "Fadlan geli xogta ciidda ama eeg qaybta 'Soil Test' si aad u aragto natiijooyinka.",
-      ciid: "Natiijada ciidda: Qoyaan: 42%, pH: 6.7, NPK: dheellitiran.",
-      ph: "pH-ga ciidda waa 6.7 – taasoo ah mid yar oo aashito ah.",
+      ciida: "Natiijada ciidda: Qoyaan: 42%, pH: 6.7, NPK: dheellitiran.",
+      phka: "pH-ga ciidda waa 6.7 – taasoo ah mid yar oo aashito ah.",
       npk: "NPK: Nitrogen – Sare, Phosphorus – Dhexdhexaad, Potassium – Hoose.",
-      dalag:
+      dalaga:
         "Talo: Beer yaanyo, basal, ama bocor – waxay ku habboon tahay xilligan.",
       crop: "Try planting tomatoes, onions, or squash — they suit current soil conditions.",
 
       // Weather
       weather: "Cimiladu waa qorrax leh, 32°C, huuradu waa 55%.",
-      cimilo: "Maanta waa qorrax leh oo heerkulku waa 32°C.",
+      cimilada: "Maanta waa qorrax oo heerkulku waa 32°C.",
 
       // Health
       health: "Haddii aad xanuunsanayso, la xiriir xarun caafimaad oo ku dhow.",
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Identity
       "who are you": "I'm SamaBot – your Somali farming and health assistant!",
       "yaad tahay":
-        "Anigu waxaan ahay SamaBot – caawiye ku taageera beeraleyda Soomaaliyeed.",
+        "Anigu waxaan ahay SamaBot – caawiye taageera beeraleyda Soomaaliyeed.",
     };
     // Normalize the message to lowercase for case-insensitive matching
     message = message.toLowerCase();

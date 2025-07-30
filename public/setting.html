@@ -6,8 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AgroMedLink - Settings</title>
     <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
+    <nav class="main-nav">
+      <h2 class="logo">AgroMedLink</h2>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul id="nav-menu">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="soil-test.html">Soil Test</a></li>
+        <li><a href="chatbot.html">SamaBot</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="settings.html" class="active">Settings</a></li>
+        <li><a href="health.html">Health Info</a></li>
+      </ul>
+    </nav>
+
     <header class="dashboard-header">
       <h1>Settings</h1>
     </header>
@@ -30,4 +45,112 @@
       </section>
     </main>
   </body>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-menu");
+      nav.classList.toggle("show");
+    }
+  </script>
 </html>
+
+<!-- settings.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgroMedLink - Settings</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <style>
+      .settings-container {
+        max-width: 600px;
+        margin: 3rem auto;
+        padding: 2rem;
+        background-color: #f9f9f9;
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .settings-container h2 {
+        margin-bottom: 1rem;
+        color: #087f5b;
+      }
+      .settings-container label {
+        font-weight: 600;
+        margin-top: 1rem;
+        display: block;
+      }
+      .settings-container input,
+      .settings-container select {
+        width: 100%;
+        padding: 0.75rem;
+        margin-top: 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+      }
+      .settings-container button {
+        margin-top: 1.5rem;
+        background-color: #087f5b;
+        color: white;
+        padding: 0.75rem 2rem;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <h2 class="logo">AgroMedLink</h2>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul id="nav-menu">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="soil-test.html">Soil Test</a></li>
+        <li><a href="chatbot.html">SamaBot</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="settings.html" class="active">Settings</a></li>
+        <li><a href="health.html">Health Info</a></li>
+      </ul>
+    </nav>
+
+    <main class="settings-container">
+      <h2>Account Settings</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Zainab Ali" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="zainabsugaal@gmail.com" />
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" placeholder="+252-61-522-6791" />
+
+      <label for="password">New Password</label>
+      <input type="password" id="password" placeholder="Enter new password" />
+
+      <label for="language">Language Preference</label>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="so">Somali</option>
+      </select>
+
+      <label for="notifications">Receive Notifications</label>
+      <select id="notifications">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <button type="submit">Save Changes</button>
+    </main>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("nav-menu");
+        nav.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html> -->
